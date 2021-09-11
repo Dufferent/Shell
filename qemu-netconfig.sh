@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Please check ip_forward had been setted!"
+# first of all -> sudo echo "1" > /proc/sys/net/ipv4/ip_forward
+
 echo "Qemu Net Configure..."
 sudo brctl addbr br0
 sudo ip tuntap add tap0 mod tap
